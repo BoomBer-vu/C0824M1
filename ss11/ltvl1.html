@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  //b1
+  // for (let i = 1; i <= 100; i++) {
+  //   if (i === 99) {
+  //     alert('Đã hoàn thành đến số 99!');
+  //   }
+  //   console.log(i);
+  // }
+  //b2
+  // let temperature = +prompt("Nhập nhiệt độ hiện tại:");
+  //
+  // while (temperature > 100) {
+  //   alert("Nhiệt độ quá cao, hãy giảm nhiệt độ!");
+  //   temperature = +prompt("Nhập lại nhiệt độ hiện tại:");
+  // }
+  //
+  // while (temperature < 20) {
+  //   alert("Nhiệt độ quá thấp, hãy tăng nhiệt độ!");
+  //   temperature = +prompt("Nhập lại nhiệt độ hiện tại:");
+  // }
+  //
+  // alert("Nhiệt độ đã ở mức hợp lý!");
+
+  //b3
+  // let n1 = 0;
+  // let n2 = 1;
+  // let nextTerm;
+  //
+  // console.log('Dãy Fibonacci:');
+  // for (let i = 1; i <= 20; i++) {
+  //   console.log(n1);
+  //   nextTerm = n1 + n2;
+  //   n1 = n2;
+  //   n2 = nextTerm;
+  // }
+
+  //b4
+  // let a = 0;
+  // let b = 1;
+  // let c;
+  // while (true) {
+  //   c = a + b;
+  //   a = b;
+  //   b = c;
+  //   if (c % 5 === 0) {
+  //     console.log(`Số đầu tiên trong dãy Fibonacci chia hết cho 5 là: ${c}`);
+  //     break;
+  //   }
+  // }
+
+  //b5
+  // let x = 0;
+  // let y = 1;
+  // let z;
+  // let sum = 0;
+  //
+  // for (let i = 1; i <= 20; i++) {
+  //   sum += x;
+  //   z = x + y;
+  //   x = y;
+  //   y = z;
+  // }
+  //
+  // console.log(`Tổng của 20 số đầu tiên trong dãy Fibonacci là: ${sum}`);
+
+  //b6
+  // let count = 0;
+  // let totalSum = 0;
+  // let num = 0;
+  //
+  // while (count < 30) {
+  //   if (num % 7 === 0) {
+  //     totalSum += num;
+  //     count++;
+  //   }
+  //   num++;
+  // }
+  //
+  // console.log(`Tổng của 30 số chia hết cho 7 đầu tiên là: ${totalSum}`);
+
+  //b7
+  for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+      console.log("Fizz");
+    } else if (i % 5 === 0) {
+      console.log("Buzz");
+    } else {
+      console.log(i);
+    }
+  }
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

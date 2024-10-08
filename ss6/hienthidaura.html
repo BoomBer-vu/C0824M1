@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+      <div id="messageDiv"></div>
+     <button type="button" onclick="showMessage();">Click Me!</button>
+<script>
+  // cảnh báo
+  // function showMessage(){
+  //   alert('Xin chào!');
+  // }
+
+  //thay thế nút click và hiển thị lên màn hình
+  // function showMessage(){
+  //   document.write('Xin chào!');
+  // }
+
+  // dùng cho lập trình viên
+  // function showMessage(){
+  //   console.log('Xin chào!');
+  // }
+  // hiển thị lên màn hình vẫn dữ nguyên nút click me
+  function showMessage(){
+    document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+  }
+</script>
+
+</body>
+</html>

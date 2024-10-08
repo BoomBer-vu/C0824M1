@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // let value = +prompt("Nhập giá trị cần tìm:  ")
+  // let x = [1,6,5,7,9]
+  // for ( let i = 0; i < x.length ; i++){
+  //       if(value == x[i]){
+  //           console.log("Giá trị " + x[i] + "ở vị trí" + i);
+  //       }
+  // }
+
+  let value = +prompt("Nhập giá trị cần tìm:  ")
+  let x = [1,6,5,7,9];
+  let index = -1;
+  for ( let i = 0; i < x.length ; i++){
+        if(value == x[i]){
+            index = i;
+        }
+  }
+  if (index<-1){
+    console.log("Giá trị không tồn tại");
+  }else {
+    console.log("Giá trị " + value + "ở vị trí" + index);
+  }
+
+
+</script>
+
+</body>
+</html>

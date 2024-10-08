@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tính Số Ngày Trong Tháng</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    input[type="number"] {
+      width: 50px;
+    }
+    button {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+<h1>Tính Số Ngày Trong Tháng</h1>
+<label for="month">Nhập tháng (1-12):</label>
+<input type="number" id="month" min="1" max="12">
+<button onclick="calculateDays()">Tính số ngày</button>
+<p id="result"></p>
+
+<script>
+  function calculateDays() {
+    let month = parseInt(document.getElementById("month").value);
+    let days;
+
+    switch (month) {
+      case 1:
+      case 3:
+      case 5:
+      case 7:
+      case 8:
+      case 10:
+      case 12:
+        days = 31;
+        break;
+      case 4:
+      case 6:
+      case 9:
+      case 11:
+        days = 30;
+        break;
+      case 2:
+        days = (new Date().getFullYear() % 4 === 0) ? 29 : 28;
+        break;
+      default:
+        days = "Không hợp lệ, vui lòng nhập số từ 1 đến 12.";
+    }
+
+    document.getElementById("result").innerText = `Tháng ${month} có ${days} ngày.`;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //b1
+//   let a = +prompt("Nhập số a:");
+//   let b = +prompt("Nhập số b:");
+//
+//   if (b === 0) {
+//     console.log("Không thể chia cho 0.");
+//   } else if (a % b === 0) {
+//     console.log(`${a} chia hết cho ${b}.`);
+//   } else {
+//     console.log(`${a} không chia hết cho ${b}.`);
+//   }
+
+   //b2
+//  let age = +prompt("Nhập tuổi học sinh:");
+//
+//   if (age < 15) {
+//     console.log("Học sinh không đủ điều kiện vào lớp 10.");
+//   } else if (age === 15) {
+//     console.log("Học sinh đủ tuổi vào lớp 10.");
+//   } else {
+//     console.log("Học sinh đủ tuổi vào lớp 10 và đã học lớp 10 rồi.");
+//   }
+
+
+  //b3
+//   let number = +prompt("Nhập một số nguyên:");
+//
+//
+//   if (number > 0) {
+//     console.log("Số nhập vào là số dương.");
+//   } else if (number < 0) {
+//     console.log("Số nhập vào là số âm.");
+//   } else {
+//     console.log("Số nhập vào là số 0.");
+//   }
+
+  //b4
+  // let a = +prompt("Nhập số thứ nhất:");
+  // let b = +prompt("Nhập số thứ hai:");
+  // let  c = +prompt("Nhập số thứ ba:");
+  //
+  // let max;
+  //
+  // if (a >= b && a >= c) {
+  //   max = a;
+  // } else if (b >= a && b >= c) {
+  //   max = b;
+  // } else {
+  //   max = c;
+  // }
+  //
+  // console.log(`Giá trị lớn nhất là: ${max}`);
+
+
+  //b5
+  // let score1 = +prompt("Nhập điểm bài kiểm tra:");
+  // let score2 = +prompt("Nhập điểm thi giữa kỳ:");
+  // let score3 = +prompt("Nhập điểm thi cuối kỳ:");
+  //
+  // let average = (score1 + score2 + score3) / 3;
+  //
+  // if (average >= 8) {
+  //   console.log("Học sinh đạt loại Giỏi.");
+  // } else if (average >= 6.5) {
+  //   console.log("Học sinh đạt loại Khá.");
+  // } else if (average >= 5) {
+  //   console.log("Học sinh đạt loại Trung Bình.");
+  // } else {
+  //   console.log("Học sinh không đạt.");
+  // }
+
+  //b6
+  // let sales = +prompt("Nhập doanh số bán hàng:");
+  // let commission;
+  //
+  // if (sales < 1000) {
+  //   commission = sales * 0.05;
+  // } else if (sales < 5000) {
+  //   commission = sales * 0.1;
+  // } else {
+  //   commission = sales * 0.15;
+  // }
+  //
+  // console.log(`Hoa hồng nhận được là: ${commission}`);
+
+
+  //b7
+  let usage =+prompt("Nhập số phút gọi:");
+  let bill;
+
+  if (usage <= 50) {
+    bill = usage * 2000;
+  } else if (usage <= 100) {
+    bill = 50 * 2000 + (usage - 50) * 1500;
+  } else {
+    bill = 50 * 2000 + 50 * 1500 + (usage - 100) * 1000;
+  }
+
+  console.log(`Cước điện thoại là: ${bill}đ`);
+
+
+</script>
+
+</body>
+</html>

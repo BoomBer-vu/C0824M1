@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //b1
+  // let celsius = +prompt("Nhập độ C:");
+  // let fahrenheit = (celsius * 9/5) + 32;
+  // console.log(`${celsius}°C = ${fahrenheit}°F`);
+  //b2
+  // let meters = + prompt("Nhập số mét:");
+  // let feet = meters * 3.2808;
+  // console.log(`${meters} m = ${feet} ft`);
+ //b3
+ //  let = +prompt("Nhập cạnh a của hình vuông:");
+ //  let area = a * a;
+ //  console.log(`Diện tích hình vuông là: ${area}`);
+  //b4
+ // let a = +prompt("Nhập cạnh a:");
+ // let b = +prompt("Nhập cạnh b:");
+ // let area = a * b;
+ //  console.log(`Diện tích hình chữ nhật là: ${area}`);
+  //b5
+  // let a = parseFloat(prompt("Nhập cạnh kề a:");
+  // let b = parseFloat(prompt("Nhập cạnh kề b:");
+  // let area = (a * b) / 2;
+  // console.log(`Diện tích tam giác vuông là: ${area}`);
+  //b6
+  // let a = +prompt("Nhập hệ số a:");
+  // let b = +prompt("Nhập hệ số b:");
+  //
+  // if (a === 0) {
+  //   if (b === 0) {
+  //     console.log("Phương trình có vô số nghiệm.");
+  //   } else {
+  //     console.log("Phương trình vô nghiệm.");
+  //   }
+  // } else {
+  //   let x = -b / a;
+  //   console.log(`Nghiệm của phương trình là: x = ${x}`);
+  // }
+  //b7
+  // let a = +prompt("Nhập hệ số a:");
+  // let b = +prompt("Nhập hệ số b:");
+  // let c = +prompt("Nhập hệ số c:");
+  //
+  // let delta = b * b - 4 * a * c;
+
+  // if (a === 0) {
+  //   console.log("Đây không phải là phương trình bậc 2.");
+  // } else {
+  //   switch (true) {
+  //     case delta > 0:
+  //       let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+  //       let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+  //       console.log(`Phương trình có 2 nghiệm phân biệt: x1 = ${x1}, x2 = ${x2}`);
+  //       break;
+  //     case delta === 0:
+  //       let x = -b / (2 * a);
+  //       console.log(`Phương trình có nghiệm kép: x = ${x}`);
+  //       break;
+  //     default:
+  //       console.log("Phương trình vô nghiệm.");
+  //   }
+  // }
+  //b8
+  // let age = +prompt("Nhập tuổi:");
+  //
+  // if (age > 0 && age < 120) {
+  //   console.log("Đây là tuổi hợp lệ.");
+  // } else {
+  //   console.log("Đây không phải là tuổi hợp lệ.");
+  // }
+  //b9
+  // let a = +prompt("Nhập cạnh a:");
+  // let b = +prompt("Nhập cạnh b:");
+  // let c = +prompt("Nhập cạnh c:");
+  //
+  // if (a > 0 && b > 0 && c > 0) {
+  //   if (a + b > c && a + c > b && b + c > a) {
+  //     console.log("a, b, c là cạnh của một tam giác.");
+  //   } else {
+  //     console.log("a, b, c không phải là cạnh của một tam giác.");
+  //   }
+  // } else {
+  //   console.log("Các cạnh phải lớn hơn 0.");
+  // }
+  //b10
+  // let usage = +prompt("Nhập số điện sử dụng (kWh):");
+  // let bill;
+  //
+  // if (usage <= 50) {
+  //   bill = usage * 1678;
+  // } else if (usage <= 100) {
+  //   bill = 50 * 1678 + (usage - 50) * 1734;
+  // } else if (usage <= 200) {
+  //   bill = 50 * 1678 + 50 * 1734 + (usage - 100) * 2014;
+  // } else {
+  //   bill = 50 * 1678 + 50 * 1734 + 100 * 2014 + (usage - 200) * 2536;
+  // }
+  //
+  // console.log(`Cước điện là: ${bill}đ`);
+
+  //b11
+  // let income = +prompt("Nhập thu nhập cá nhân hàng tháng:");
+  // let tax;
+  //
+  // if (income <= 5000000) {
+  //   tax = 0;
+  // } else if (income <= 10000000) {
+  //   tax = (income - 5000000) * 0.1;
+  // } else if (income <= 18000000) {
+  //   tax = 500000 + (income - 10000000) * 0.2;
+  // } else {
+  //   tax = 2500000 + (income - 18000000) * 0.3;
+  // }
+  //
+  // console.log(`Thuế thu nhập cá nhân phải nộp là: ${tax}đ`);
+  //b12
+  let principal = +prompt("Nhập số tiền ban đầu:");
+  let months = +prompt("Nhập số tháng cho vay:");
+  let monthlyInterestRate = +prompt("Nhập lãi suất hàng tháng (%):") / 100;
+
+  let totalAmount = principal * Math.pow((1 + monthlyInterestRate), months);
+  let interest = totalAmount - principal;
+
+  console.log(`Số lãi ngân hàng nhận được là: ${interest}`);
+
+</script>
+
+</body>
+</html>
